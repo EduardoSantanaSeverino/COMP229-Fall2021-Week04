@@ -1,0 +1,41 @@
+
+
+windows or mac: 
+
+open your terminal:
+
+type: mongo - enter
+
+you should see mongo intro....
+
+use mean - enter
+
+show dbs - enter
+
+show databases - enter
+
+db.posts.insert({"title":"First Post", "user": "bob"}) - enter
+
+db.posts.insert({"title":"Second Post Title", "user": "alice"})
+
+db.posts.insert({"title":"Third Post Title", "user": "Uma Pavan"})
+
+db.posts.find() - enter
+
+db.posts.find({}).pretty()
+
+db.posts.find({ "user": "alice" }).pretty()
+
+db.posts.find({ "user": { $in: ["alice", "bob"] } })
+
+db.posts.find({ "user": "alice", "commentsCount": { $gt: 10 } })
+
+db.posts.find( { $or: [{ "user": "alice" }, { "user": "bob" }] })
+
+update() or save() methods.
+
+db.posts.update({ "user": "alice" }, { $set: { "title": "Second Post update" } }, { multi: true });
+
+db.posts.seva
+
+https://github.com/EduardoSantanaSeverino/COMP229-Fall2021-Week04
